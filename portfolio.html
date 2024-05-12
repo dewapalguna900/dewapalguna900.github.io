@@ -143,8 +143,8 @@
                     <!-- Portfolio Item Starts -->
                     <li>
                         <figure>
-                            <img src="http://via.placeholder.com/895x552.jpg" alt="Portolio Image" />
-                            <div><span>Local Video Project</span></div>
+                            <img src="img/porftolio/hungryzone-page1.jpg" alt="Portolio Image" />
+                            <div><span>HungryZone</span></div>
                         </figure>
                     </li>
                     <!-- Portfolio Item Ends -->
@@ -301,37 +301,51 @@
                     </li>
                     <!-- Portfolio Item Detail Ends -->
                     <!-- Portfolio Item Detail Starts -->
+                    <!-- PWA -->
                     <li>
                         <figure>
                             <!-- Project Details Starts -->
                             <figcaption>
-                                <h3>Local Video Project</h3>
+                                <h3>HungryZone</h3>
                                 <div class="row open-sans-font">
                                     <div class="col-6 mb-2">
                                         <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project
-                                        </span>: <span class="ft-wt-600 uppercase">Video</span>
+                                        </span>: <span class="ft-wt-600 uppercase">PWA project</span>
                                     </div>
                                     <div class="col-6 mb-2">
-                                        <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>:
-                                        <span class="ft-wt-600 uppercase">Videohive</span>
+                                        <i class="fa fa-user-o pr-2"></i><span class="project-label">Team </span>:
+                                        <span class="ft-wt-600 uppercase">One person</span>
                                     </div>
                                     <div class="col-6 mb-2">
-                                        <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>:
-                                        <span class="ft-wt-600 uppercase">Adobe Premium</span>
+                                        <i class="fa fa-code pr-2"></i><span class="project-label">Tech </span>:
+                                        <span class="ft-wt-600 uppercase">JS, API, LocalStorage, PWA, SPA</span>
                                     </div>
                                     <div class="col-6 mb-2">
                                         <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview
-                                        </span>: <span class="ft-wt-600 uppercase"><a href="#"
-                                                target="_blank">www.envato.com</a></span>
+                                        </span>: <span class="ft-wt-600 uppercase"><a
+                                                href="https://hungryzone-23499.web.app/"
+                                                target="_blank">hungryzone.web.app</a></span>
                                     </div>
                                 </div>
                             </figcaption>
                             <!-- Project Details Ends -->
                             <!-- Main Project Content Starts -->
-                            <video id="video" class="responsive-video" controls
-                                poster="http://via.placeholder.com/895x552.jpg">
-                                <source src="#" type="video/mp4">
-                            </video>
+                            <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel"
+                                data-interval="false">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#slider" data-slide-to="0" class="active"></li>
+                                    <li data-target="#slider" data-slide-to="1"></li>
+                                </ol>
+                                <!-- The slideshow -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/porftolio/hungryzone-page1.jpg" alt="Portolio Image" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/porftolio/hungryzone-page2.jpg" alt="Portolio Image" />
+                                    </div>
+                                </div>
+                            </div>
                             <!-- Main Project Content Ends -->
                         </figure>
                     </li>
@@ -529,7 +543,7 @@
 
     <script>
         $(document).ready(function () {
-            $("#popup-announcement").modal('show');
+            $("#popup-announcement").modal('hidden');
         });
     </script>
 
